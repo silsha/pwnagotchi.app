@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4608FD6723B17F4A00D15B86 /* ios-pwnagotchi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46FD8B7923B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46A02E7123B105D70029A011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A02E7023B105D70029A011 /* SettingsView.swift */; };
+		46A02E7423B11ABD0029A011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A02E7323B11ABD0029A011 /* SettingsView.swift */; };
 		46FD8B4F23B0D37800C34BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B4E23B0D37800C34BDF /* AppDelegate.swift */; };
 		46FD8B5123B0D37800C34BDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B5023B0D37800C34BDF /* SceneDelegate.swift */; };
 		46FD8B5323B0D37800C34BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B5223B0D37800C34BDF /* ContentView.swift */; };
@@ -14,10 +17,9 @@
 		46FD8B5823B0D37F00C34BDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8B5723B0D37F00C34BDF /* Preview Assets.xcassets */; };
 		46FD8B5B23B0D37F00C34BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8B5923B0D37F00C34BDF /* LaunchScreen.storyboard */; };
 		46FD8B6623B0D38000C34BDF /* ios_pwnagotchiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B6523B0D38000C34BDF /* ios_pwnagotchiUITests.swift */; };
-		46FD8B6B23B0D38000C34BDF /* ios-pwnagotchi WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46FD8B6A23B0D38000C34BDF /* ios-pwnagotchi WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46FD8B6B23B0D38000C34BDF /* ios-pwnagotchi WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46FD8B6A23B0D38000C34BDF /* ios-pwnagotchi WatchKit App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46FD8B7123B0D38000C34BDF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8B6F23B0D38000C34BDF /* Interface.storyboard */; };
 		46FD8B7323B0D38200C34BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8B7223B0D38200C34BDF /* Assets.xcassets */; };
-		46FD8B7A23B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46FD8B7923B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46FD8B7F23B0D38300C34BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B7E23B0D38300C34BDF /* ContentView.swift */; };
 		46FD8B8123B0D38300C34BDF /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B8023B0D38300C34BDF /* HostingController.swift */; };
 		46FD8B8323B0D38300C34BDF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B8223B0D38300C34BDF /* ExtensionDelegate.swift */; };
@@ -26,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4608FD6823B17F4A00D15B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FD8B4323B0D37800C34BDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46FD8B7823B0D38300C34BDF;
+			remoteInfo = "ios-pwnagotchi WatchKit Extension";
+		};
+		46E2B27A23B1810800295CE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46FD8B4323B0D37800C34BDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46FD8B6923B0D38000C34BDF;
+			remoteInfo = "ios-pwnagotchi WatchKit App";
+		};
 		46FD8B6223B0D38000C34BDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46FD8B4323B0D37800C34BDF /* Project object */;
@@ -33,30 +49,16 @@
 			remoteGlobalIDString = 46FD8B4A23B0D37800C34BDF;
 			remoteInfo = "ios-pwnagotchi";
 		};
-		46FD8B6C23B0D38000C34BDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46FD8B4323B0D37800C34BDF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46FD8B6923B0D38000C34BDF;
-			remoteInfo = "ios-pwnagotchi WatchKit App";
-		};
-		46FD8B7B23B0D38300C34BDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46FD8B4323B0D37800C34BDF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46FD8B7823B0D38300C34BDF;
-			remoteInfo = "ios-pwnagotchi WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		46FD8B8F23B0D38500C34BDF /* Embed App Extensions */ = {
+		4608FD6A23B17F4A00D15B86 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				46FD8B7A23B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension.appex in Embed App Extensions */,
+				4608FD6723B17F4A00D15B86 /* ios-pwnagotchi WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,7 +77,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		46FD8B4B23B0D37800C34BDF /* ios-pwnagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-pwnagotchi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A02E7023B105D70029A011 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		46A02E7223B112DE0029A011 /* ios-pwnagotchi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ios-pwnagotchi.entitlements"; sourceTree = "<group>"; };
+		46A02E7323B11ABD0029A011 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		46FD8B4B23B0D37800C34BDF /* pwnagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pwnagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FD8B4E23B0D37800C34BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FD8B5023B0D37800C34BDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46FD8B5223B0D37800C34BDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +129,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4608FD6623B17F4A00D15B86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		46FD8B4223B0D37800C34BDF = {
 			isa = PBXGroup;
 			children = (
@@ -132,13 +144,14 @@
 				46FD8B6E23B0D38000C34BDF /* ios-pwnagotchi WatchKit App */,
 				46FD8B7D23B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension */,
 				46FD8B4C23B0D37800C34BDF /* Products */,
+				4608FD6623B17F4A00D15B86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		46FD8B4C23B0D37800C34BDF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46FD8B4B23B0D37800C34BDF /* ios-pwnagotchi.app */,
+				46FD8B4B23B0D37800C34BDF /* pwnagotchi.app */,
 				46FD8B6123B0D38000C34BDF /* ios-pwnagotchiUITests.xctest */,
 				46FD8B6A23B0D38000C34BDF /* ios-pwnagotchi WatchKit App.app */,
 				46FD8B7923B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension.appex */,
@@ -149,6 +162,7 @@
 		46FD8B4D23B0D37800C34BDF /* ios-pwnagotchi */ = {
 			isa = PBXGroup;
 			children = (
+				46A02E7223B112DE0029A011 /* ios-pwnagotchi.entitlements */,
 				46FD8B4E23B0D37800C34BDF /* AppDelegate.swift */,
 				46FD8B5023B0D37800C34BDF /* SceneDelegate.swift */,
 				46FD8B5223B0D37800C34BDF /* ContentView.swift */,
@@ -156,6 +170,7 @@
 				46FD8B5923B0D37F00C34BDF /* LaunchScreen.storyboard */,
 				46FD8B5C23B0D37F00C34BDF /* Info.plist */,
 				46FD8B5623B0D37F00C34BDF /* Preview Content */,
+				46A02E7023B105D70029A011 /* SettingsView.swift */,
 			);
 			path = "ios-pwnagotchi";
 			sourceTree = "<group>";
@@ -196,6 +211,7 @@
 				46FD8B8423B0D38500C34BDF /* Assets.xcassets */,
 				46FD8B8923B0D38500C34BDF /* Info.plist */,
 				46FD8B8623B0D38500C34BDF /* Preview Content */,
+				46A02E7323B11ABD0029A011 /* SettingsView.swift */,
 			);
 			path = "ios-pwnagotchi WatchKit Extension";
 			sourceTree = "<group>";
@@ -223,11 +239,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				46FD8B6D23B0D38000C34BDF /* PBXTargetDependency */,
+				46E2B27B23B1810800295CE3 /* PBXTargetDependency */,
 			);
 			name = "ios-pwnagotchi";
 			productName = "ios-pwnagotchi";
-			productReference = 46FD8B4B23B0D37800C34BDF /* ios-pwnagotchi.app */;
+			productReference = 46FD8B4B23B0D37800C34BDF /* pwnagotchi.app */;
 			productType = "com.apple.product-type.application";
 		};
 		46FD8B6023B0D38000C34BDF /* ios-pwnagotchiUITests */ = {
@@ -253,12 +269,12 @@
 			buildConfigurationList = 46FD8B9023B0D38500C34BDF /* Build configuration list for PBXNativeTarget "ios-pwnagotchi WatchKit App" */;
 			buildPhases = (
 				46FD8B6823B0D38000C34BDF /* Resources */,
-				46FD8B8F23B0D38500C34BDF /* Embed App Extensions */,
+				4608FD6A23B17F4A00D15B86 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46FD8B7C23B0D38300C34BDF /* PBXTargetDependency */,
+				4608FD6923B17F4A00D15B86 /* PBXTargetDependency */,
 			);
 			name = "ios-pwnagotchi WatchKit App";
 			productName = "ios-pwnagotchi WatchKit App";
@@ -372,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46FD8B4F23B0D37800C34BDF /* AppDelegate.swift in Sources */,
+				46A02E7123B105D70029A011 /* SettingsView.swift in Sources */,
 				46FD8B5123B0D37800C34BDF /* SceneDelegate.swift in Sources */,
 				46FD8B5323B0D37800C34BDF /* ContentView.swift in Sources */,
 			);
@@ -390,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46FD8B8123B0D38300C34BDF /* HostingController.swift in Sources */,
+				46A02E7423B11ABD0029A011 /* SettingsView.swift in Sources */,
 				46FD8B7F23B0D38300C34BDF /* ContentView.swift in Sources */,
 				46FD8B8323B0D38300C34BDF /* ExtensionDelegate.swift in Sources */,
 			);
@@ -398,20 +416,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4608FD6923B17F4A00D15B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46FD8B7823B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension */;
+			targetProxy = 4608FD6823B17F4A00D15B86 /* PBXContainerItemProxy */;
+		};
+		46E2B27B23B1810800295CE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46FD8B6923B0D38000C34BDF /* ios-pwnagotchi WatchKit App */;
+			targetProxy = 46E2B27A23B1810800295CE3 /* PBXContainerItemProxy */;
+		};
 		46FD8B6323B0D38000C34BDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 46FD8B4A23B0D37800C34BDF /* ios-pwnagotchi */;
 			targetProxy = 46FD8B6223B0D38000C34BDF /* PBXContainerItemProxy */;
-		};
-		46FD8B6D23B0D38000C34BDF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 46FD8B6923B0D38000C34BDF /* ios-pwnagotchi WatchKit App */;
-			targetProxy = 46FD8B6C23B0D38000C34BDF /* PBXContainerItemProxy */;
-		};
-		46FD8B7C23B0D38300C34BDF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 46FD8B7823B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension */;
-			targetProxy = 46FD8B7B23B0D38300C34BDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -555,7 +573,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-pwnagotchi WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = E622J4TJFL;
+				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ios-pwnagotchi WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -563,10 +581,10 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.fnordcordia.ios-pwnagotchi.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.fnordcordia.pwnagotchi.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -579,7 +597,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-pwnagotchi WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = E622J4TJFL;
+				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ios-pwnagotchi WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,10 +605,10 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.fnordcordia.ios-pwnagotchi.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.fnordcordia.pwnagotchi.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -600,16 +618,19 @@
 		46FD8B9123B0D38500C34BDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E622J4TJFL;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				IBSC_MODULE = ios_pwnagotchi_WatchKit_Extension;
 				INFOPLIST_FILE = "ios-pwnagotchi WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.fnordcordia.ios-pwnagotchi.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.fnordcordia.pwnagotchi.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -619,16 +640,19 @@
 		46FD8B9223B0D38500C34BDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E622J4TJFL;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
+				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				IBSC_MODULE = ios_pwnagotchi_WatchKit_Extension;
 				INFOPLIST_FILE = "ios-pwnagotchi WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.fnordcordia.ios-pwnagotchi.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.fnordcordia.pwnagotchi.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -638,18 +662,23 @@
 		46FD8B9523B0D38500C34BDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = "ios-pwnagotchi/ios-pwnagotchi.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-pwnagotchi/Preview Content\"";
-				DEVELOPMENT_TEAM = E622J4TJFL;
+				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ios-pwnagotchi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.fnordcordia.ios-pwnagotchi";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.fnordcordia.pwnagotchi;
+				PRODUCT_NAME = pwnagotchi;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -658,18 +687,23 @@
 		46FD8B9623B0D38500C34BDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = "ios-pwnagotchi/ios-pwnagotchi.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-pwnagotchi/Preview Content\"";
-				DEVELOPMENT_TEAM = E622J4TJFL;
+				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ios-pwnagotchi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.fnordcordia.ios-pwnagotchi";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.fnordcordia.pwnagotchi;
+				PRODUCT_NAME = pwnagotchi;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -680,7 +714,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E622J4TJFL;
+				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				INFOPLIST_FILE = "ios-pwnagotchiUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,7 +734,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E622J4TJFL;
+				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				INFOPLIST_FILE = "ios-pwnagotchiUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>eu.fnordcordia.ios-pwnagotchi</string>
+	<string>eu.fnordcordia.pwnagotchi</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
