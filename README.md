@@ -1,9 +1,9 @@
 # Pwnagotchi.app
 A Pwnagotchi app, written in Swift and built for iOS, iPadOS, watchOS and macOS.
 
-| iOS  | iPadOS |
-| ------------- | ------------- |
-| <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/43222984-9EAD-4AE2-A121-6D0C1AF1BFFE.jpeg" width="200" alt="iOS Screenshot"> | <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/EC4472B1-2EA2-444E-B8D7-F9ECDA25F6C8.jpeg" width="200" alt="iPadOS Screenshot">  |
+| iOS  | iPadOS | watchOS |
+| ------------- | ------------- | ---------- |
+| <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/43222984-9EAD-4AE2-A121-6D0C1AF1BFFE.jpeg" width="200" alt="iOS Screenshot"> | <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/EC4472B1-2EA2-444E-B8D7-F9ECDA25F6C8.jpeg" width="200" alt="iPadOS Screenshot">  | <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/112D351B-28AD-476E-AA0F-A9907F7E8970.jpeg" width="200" alt="watchOS Screenshot"> |
 
 ## Disclaimer
 This is my first project in Swift and my main goal was to play around with SwiftUI and Catalyst. I was impressed with how quickly I was able to get a working product up and running, but I realize that I am only scratching the surface of the subject.
