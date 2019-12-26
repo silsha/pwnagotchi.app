@@ -30,6 +30,9 @@ struct ContentView: View {
                     .frame(maxHeight: 150.0)
                     .fixedSize(horizontal: false, vertical: true)
                 Spacer()
+                if(self.facedata.facedata.friend_name_text != "") {
+                Text("\(self.facedata.facedata.friend_face_text) \(self.facedata.facedata.friend_name_text)")
+                }
                 Button(
                     action: { self.facedata.connectBtn()},
                     label: { Text(self.facedata.button)

@@ -23,13 +23,18 @@ class ios_pwnagotchiUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // UI tests must launch the application that they test.
+    func testBasicNavigation() {
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        app.navigationBars["Not connected"].buttons["Settings"].tap()
+        
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.textFields["Username"]/*[[".cells.textFields[\"Username\"]",".textFields[\"Username\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.secureTextFields["Password"]/*[[".cells.secureTextFields[\"Password\"]",".secureTextFields[\"Password\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["_TtGC7SwiftUIP13$7fff2c68216028DestinationHosting"].buttons["Not connected"].tap()
+        app.buttons["Connect"].tap();
+        
+        XCTAssert(app.staticTexts["Not connected"].exists)
     }
 
     func testLaunchPerformance() {
