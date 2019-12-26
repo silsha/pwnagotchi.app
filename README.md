@@ -1,9 +1,9 @@
 # Pwnagotchi.app
 A Pwnagotchi app, written in Swift and built for iOS, iPadOS, watchOS and macOS.
 
-| iOS  | iPadOS | watchOS |
-| ------------- | ------------- | ---------- |
-| <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/43222984-9EAD-4AE2-A121-6D0C1AF1BFFE.jpeg" width="200" alt="iOS Screenshot"> | <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/EC4472B1-2EA2-444E-B8D7-F9ECDA25F6C8.jpeg" width="200" alt="iPadOS Screenshot">  | <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/112D351B-28AD-476E-AA0F-A9907F7E8970.jpeg" width="200" alt="watchOS Screenshot"> |
+| iOS  | iPadOS | watchOS | macOS |
+| ------------- | ------------- | ---------- | -------- |
+| <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/43222984-9EAD-4AE2-A121-6D0C1AF1BFFE.jpeg" width="200" alt="iOS Screenshot"> | <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/EC4472B1-2EA2-444E-B8D7-F9ECDA25F6C8.jpeg" width="200" alt="iPadOS Screenshot">  | <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/112D351B-28AD-476E-AA0F-A9907F7E8970.jpeg" width="200" alt="watchOS Screenshot"> | <img src="https://github.com/silsha/pwnagotchi.app/raw/master/.github/assets/Bildschirmfoto%202019-12-26%20um%2017.52.46.png" width="200" alt="macOS Screenshot"> |
 
 ## How to use
 1. On iOS/macOS, open the settings menu and enter the IP address of your Pwnagotchi and the username and password for the WebUI.
