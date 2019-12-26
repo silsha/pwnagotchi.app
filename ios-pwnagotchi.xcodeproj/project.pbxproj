@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4608FD6723B17F4A00D15B86 /* ios-pwnagotchi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46FD8B7923B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4678F65723B40FF100EC3319 /* FaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65623B40FF100EC3319 /* FaceModel.swift */; };
+		4678F65923B4114500EC3319 /* FaceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65823B4114500EC3319 /* FaceFetcher.swift */; };
 		46A02E7123B105D70029A011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A02E7023B105D70029A011 /* SettingsView.swift */; };
 		46A02E7423B11ABD0029A011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A02E7323B11ABD0029A011 /* SettingsView.swift */; };
 		46FD8B4F23B0D37800C34BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B4E23B0D37800C34BDF /* AppDelegate.swift */; };
@@ -77,6 +79,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4678F65623B40FF100EC3319 /* FaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceModel.swift; sourceTree = "<group>"; };
+		4678F65823B4114500EC3319 /* FaceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFetcher.swift; sourceTree = "<group>"; };
 		46A02E7023B105D70029A011 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		46A02E7223B112DE0029A011 /* ios-pwnagotchi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ios-pwnagotchi.entitlements"; sourceTree = "<group>"; };
 		46A02E7323B11ABD0029A011 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 				46FD8B5C23B0D37F00C34BDF /* Info.plist */,
 				46FD8B5623B0D37F00C34BDF /* Preview Content */,
 				46A02E7023B105D70029A011 /* SettingsView.swift */,
+				4678F65823B4114500EC3319 /* FaceFetcher.swift */,
+				4678F65623B40FF100EC3319 /* FaceModel.swift */,
 			);
 			path = "ios-pwnagotchi";
 			sourceTree = "<group>";
@@ -389,6 +395,8 @@
 			files = (
 				46FD8B4F23B0D37800C34BDF /* AppDelegate.swift in Sources */,
 				46A02E7123B105D70029A011 /* SettingsView.swift in Sources */,
+				4678F65923B4114500EC3319 /* FaceFetcher.swift in Sources */,
+				4678F65723B40FF100EC3319 /* FaceModel.swift in Sources */,
 				46FD8B5123B0D37800C34BDF /* SceneDelegate.swift in Sources */,
 				46FD8B5323B0D37800C34BDF /* ContentView.swift in Sources */,
 			);
