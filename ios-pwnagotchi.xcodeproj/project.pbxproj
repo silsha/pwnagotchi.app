@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4608FD6723B17F4A00D15B86 /* ios-pwnagotchi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46FD8B7923B0D38300C34BDF /* ios-pwnagotchi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4617BEE623B51D7800A07C06 /* FaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65623B40FF100EC3319 /* FaceModel.swift */; };
+		4617BEE723B51D7B00A07C06 /* FaceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65823B4114500EC3319 /* FaceFetcher.swift */; };
+		4617BEE923B51E0F00A07C06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B7E23B0D38300C34BDF /* ContentView.swift */; };
 		4678F65723B40FF100EC3319 /* FaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65623B40FF100EC3319 /* FaceModel.swift */; };
 		4678F65923B4114500EC3319 /* FaceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65823B4114500EC3319 /* FaceFetcher.swift */; };
 		46A02E7123B105D70029A011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A02E7023B105D70029A011 /* SettingsView.swift */; };
@@ -22,7 +25,6 @@
 		46FD8B6B23B0D38000C34BDF /* ios-pwnagotchi WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46FD8B6A23B0D38000C34BDF /* ios-pwnagotchi WatchKit App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46FD8B7123B0D38000C34BDF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8B6F23B0D38000C34BDF /* Interface.storyboard */; };
 		46FD8B7323B0D38200C34BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8B7223B0D38200C34BDF /* Assets.xcassets */; };
-		46FD8B7F23B0D38300C34BDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B7E23B0D38300C34BDF /* ContentView.swift */; };
 		46FD8B8123B0D38300C34BDF /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B8023B0D38300C34BDF /* HostingController.swift */; };
 		46FD8B8323B0D38300C34BDF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B8223B0D38300C34BDF /* ExtensionDelegate.swift */; };
 		46FD8B8523B0D38500C34BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FD8B8423B0D38500C34BDF /* Assets.xcassets */; };
@@ -416,7 +418,9 @@
 			files = (
 				46FD8B8123B0D38300C34BDF /* HostingController.swift in Sources */,
 				46A02E7423B11ABD0029A011 /* SettingsView.swift in Sources */,
-				46FD8B7F23B0D38300C34BDF /* ContentView.swift in Sources */,
+				4617BEE923B51E0F00A07C06 /* ContentView.swift in Sources */,
+				4617BEE723B51D7B00A07C06 /* FaceFetcher.swift in Sources */,
+				4617BEE623B51D7800A07C06 /* FaceModel.swift in Sources */,
 				46FD8B8323B0D38300C34BDF /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
