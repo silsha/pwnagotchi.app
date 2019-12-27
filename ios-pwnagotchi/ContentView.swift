@@ -10,9 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var facedata: FaceFetcher = FaceFetcher()
+    @State var showWarning : Bool = false
     
     var body: some View {
-        NavigationView {
+        
+        let showWarningBinding = Binding<Bool>(get: {
+            return (UserDefaults.standard.string(forKey: "username") == nil || UserDefaults.standard.string(forKey: "username") == "")
+        }, set: {
+            self.showWarning = $0
+        })
+        
+        return NavigationView {
             VStack {
                 Text(self.facedata.facedata.lastshake)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -56,6 +64,9 @@ struct ContentView: View {
             )
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .alert(isPresented: showWarningBinding) {
+            Alert(title: Text("No credentials found. Please enter them in the settings menu."))
+        }
     }
 }
 
