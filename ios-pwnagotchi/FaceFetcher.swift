@@ -31,6 +31,15 @@ public class FaceFetcher: ObservableObject {
         let url = URL(string: "http://" + username + ":" + password + "@" + host + ":8080/plugins/state-api/json")
         
         URLSession.shared.dataTask(with: url!) {(data,response,error) in
+            if ((error) != nil) {
+                DispatchQueue.main.async {
+                    self.facedata.face = "(☓‿‿☓)"
+                    self.facedata.status = "Could not connect."
+                    self.button = "Connect"
+                    self.running = false
+                }
+                return
+            }
             do {
                 if (self.running == true) {
                     DispatchQueue.main.async {
@@ -51,6 +60,11 @@ public class FaceFetcher: ObservableObject {
                 }
             } catch {
                 print(error)
+                DispatchQueue.main.async {
+                    self.facedata.face = "(☓‿‿☓)"
+                    self.facedata.status = "Could not connect."
+                    self.button = "Connect"
+                }
             }
         }.resume()
     }
