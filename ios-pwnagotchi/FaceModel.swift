@@ -14,8 +14,9 @@ struct Face: Codable {
     public var channel: Int = 0
     public var epoch: Int = 0
     public var face: String = "(^‿‿^)"
-    public var friend_face_text: String = ""
-    public var friend_name_text: String = ""
+    public var friend_face_text: String? = ""
+    public var friend_name_text: String? = ""
+    public var lastshake: String = ""
     public var mode: String = ""
     public var name: String = ""
     public var pwnd_run: String = ""    // Not sure why this is a string in state-api

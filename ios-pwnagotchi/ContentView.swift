@@ -14,13 +14,16 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text(self.facedata.facedata.lastshake)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 18.0)
                 Spacer()
                 Text(self.facedata.facedata.face)
                     .font(.system(size: 500, design: .monospaced))
                     .minimumScaleFactor(0.1)
                     .lineLimit(1)
                     .padding(.vertical, 30.0)
-                    .padding(.trailing, 60.0)
+                    .padding(.trailing, 50.0)
                     .frame(maxWidth: .infinity)
                 Text(self.facedata.facedata.status)
                     .font(.system(size: 60))
@@ -30,8 +33,8 @@ struct ContentView: View {
                     .frame(maxHeight: 150.0)
                     .fixedSize(horizontal: false, vertical: true)
                 Spacer()
-                if(self.facedata.facedata.friend_name_text != "") {
-                Text("\(self.facedata.facedata.friend_face_text) \(self.facedata.facedata.friend_name_text)")
+                if(self.facedata.facedata.friend_name_text != nil) {
+                    Text("\(self.facedata.facedata.friend_face_text ?? "") \(self.facedata.facedata.friend_name_text ?? "")")
                 }
                 Button(
                     action: { self.facedata.connectBtn()},
