@@ -22,9 +22,11 @@ struct ContentView: View {
         
         return NavigationView {
             VStack {
-                Text(self.facedata.facedata.lastshake)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.horizontal, 18.0)
+                if(self.facedata.facedata.pwnd_last != nil) {
+                    Text("\(self.facedata.facedata.pwnd_last!)")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 22.5)
+                }
                 Spacer()
                 Text(self.facedata.facedata.face)
                     .font(.system(size: 100, design: .monospaced))
