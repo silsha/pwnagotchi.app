@@ -51,8 +51,12 @@ public class FaceFetcher: ObservableObject {
                     DispatchQueue.main.async {
                         self.facedata = decodedFace
                         if (self.running == true) {
-                            self.titlebar = "PWND: \(self.facedata.pwnd_run) (\(self.facedata.pwnd_tot)) | \(self.facedata.mode)"
+                            #if os(watchOS)
+                                self.titlebar = "\(self.facedata.pwnd_run)/\(self.facedata.pwnd_tot) \(self.facedata.mode)"
+                            #else
+                                self.titlebar = "PWND: \(self.facedata.pwnd_run) (\(self.facedata.pwnd_tot)) | \(self.facedata.mode)"
                             self.load()
+                            #endif
                         }
                     }
                 } else {

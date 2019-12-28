@@ -30,15 +30,19 @@ struct ContentView: View {
                 action: { self.facedata.connectBtn() },
                 label: { Text(self.facedata.button) }
             )
+                .padding(.bottom, 10.0)
             Spacer()
             HStack(alignment: .bottom) {
-                Spacer()
+                if(self.facedata.facedata.pwnd_last != nil) {
+                    Text("\(self.facedata.facedata.pwnd_last!)")
+                        .font(.caption)
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(1)
+                }
                 Text(self.facedata.facedata.uptime)
                     .font(.caption)
                     .multilineTextAlignment(.trailing)
                     .lineLimit(1)
-                    .padding(.bottom, -10.0)
-                    .padding(.trailing, 10.0)
             }
         }
         .navigationBarTitle(self.facedata.titlebar)
