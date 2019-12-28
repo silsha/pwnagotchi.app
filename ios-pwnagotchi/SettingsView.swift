@@ -40,8 +40,12 @@ struct SettingsView: View {
             Form {
                 Section(header: Text("WebUI Credentials")){
                     TextField("Hostname", text: hostnamebinding)
+                        .textContentType(.URL)
                     TextField("Username", text: userbinding)
+                        .textContentType(.username)
+                        .autocapitalization(.none)
                     SecureField("Password", text: passwordbinding)
+                        .textContentType(.password)
                 }
 
             } .navigationBarTitle("Settings")

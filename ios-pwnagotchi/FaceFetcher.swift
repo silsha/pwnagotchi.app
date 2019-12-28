@@ -62,7 +62,7 @@ public class FaceFetcher: ObservableObject {
                 print(error)
                 DispatchQueue.main.async {
                     self.facedata.face = "(☓‿‿☓)"
-                    self.facedata.status = "Could not connect."
+                    self.facedata.status = "Something went wrong."
                     self.button = "Connect"
                 }
             }
