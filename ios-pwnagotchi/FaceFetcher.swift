@@ -55,8 +55,8 @@ public class FaceFetcher: ObservableObject {
                                 self.titlebar = "\(self.facedata.pwnd_run)/\(self.facedata.pwnd_tot) \(self.facedata.mode)"
                             #else
                                 self.titlebar = "PWND: \(self.facedata.pwnd_run) (\(self.facedata.pwnd_tot)) | \(self.facedata.mode)"
-                            self.load()
                             #endif
+                            self.load()
                         }
                     }
                 } else {
