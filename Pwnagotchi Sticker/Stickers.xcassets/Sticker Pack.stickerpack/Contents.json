@@ -2,6 +2,30 @@
   "stickers" : [
     {
       "filename" : "cool.sticker"
+    },
+    {
+      "filename" : "intense.sticker"
+    },
+    {
+      "filename" : "friendly.sticker"
+    },
+    {
+      "filename" : "happy.sticker"
+    },
+    {
+      "filename" : "sad.sticker"
+    },
+    {
+      "filename" : "lonely.sticker"
+    },
+    {
+      "filename" : "broken.sticker"
+    },
+    {
+      "filename" : "debug.sticker"
+    },
+    {
+      "filename" : "bored.sticker"
     }
   ],
   "info" : {
@@ -9,6 +33,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "grid-size" : "regular"
+    "grid-size" : "large"
   }
 }
