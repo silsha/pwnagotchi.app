@@ -8,6 +8,28 @@
 
 import SwiftUI
 
+struct NavView: View {
+    var body: some View {
+        TabView {
+            ContentView()
+                .tabItem {
+                    Image(systemName: "smiley")
+                    Text("Face")
+            }
+            MapViewContainer()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Map")
+            }
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "ellipsis")
+                    Text("Settings")
+            }
+        }
+    }
+}
+
 struct ContentView: View {
     @ObservedObject var facedata: FaceFetcher = FaceFetcher()
     @State var showWarning : Bool = false
@@ -52,7 +74,7 @@ struct ContentView: View {
                     action: { self.facedata.connectBtn()},
                     label: { Text(self.facedata.button)
                         .font(.system(size:40))
-                }
+                    }
                 )
                 HStack(alignment: .bottom) {
                     Text("Uptime: \(self.facedata.facedata.uptime)")
@@ -63,9 +85,6 @@ struct ContentView: View {
 
             }
             .navigationBarTitle(self.facedata.titlebar)
-            .navigationBarItems(trailing:
-                NavigationLink(destination: SettingsView()) {Text("Settings")}
-            )
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .alert(isPresented: showWarningBinding) {

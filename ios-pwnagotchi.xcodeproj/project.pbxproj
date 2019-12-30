@@ -11,10 +11,13 @@
 		4617BEE623B51D7800A07C06 /* FaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65623B40FF100EC3319 /* FaceModel.swift */; };
 		4617BEE723B51D7B00A07C06 /* FaceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65823B4114500EC3319 /* FaceFetcher.swift */; };
 		4617BEE923B51E0F00A07C06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B7E23B0D38300C34BDF /* ContentView.swift */; };
+		463CDDD723BA1F3800773A3A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CDDD623BA1F3700773A3A /* MapView.swift */; };
+		463CDDD923BA22B000773A3A /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CDDD823BA22B000773A3A /* MapModel.swift */; };
+		463CDDDB23BA25C000773A3A /* MapFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CDDDA23BA25C000773A3A /* MapFetcher.swift */; };
 		4678F65723B40FF100EC3319 /* FaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65623B40FF100EC3319 /* FaceModel.swift */; };
 		4678F65923B4114500EC3319 /* FaceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678F65823B4114500EC3319 /* FaceFetcher.swift */; };
 		468F9C0F23B8F20A00102CD0 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468F9C0E23B8F20A00102CD0 /* Stickers.xcassets */; };
-		468F9C1323B8F20A00102CD0 /* Pwnagotchi Sticker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 468F9C0C23B8F20600102CD0 /* Pwnagotchi Sticker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		468F9C1323B8F20A00102CD0 /* Pwnagotchi Sticker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 468F9C0C23B8F20600102CD0 /* Pwnagotchi Sticker.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46A02E7123B105D70029A011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A02E7023B105D70029A011 /* SettingsView.swift */; };
 		46A02E7423B11ABD0029A011 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A02E7323B11ABD0029A011 /* SettingsView.swift */; };
 		46FD8B4F23B0D37800C34BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD8B4E23B0D37800C34BDF /* AppDelegate.swift */; };
@@ -101,6 +104,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		463CDDD623BA1F3700773A3A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		463CDDD823BA22B000773A3A /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		463CDDDA23BA25C000773A3A /* MapFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFetcher.swift; sourceTree = "<group>"; };
 		4678F65623B40FF100EC3319 /* FaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceModel.swift; sourceTree = "<group>"; };
 		4678F65823B4114500EC3319 /* FaceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFetcher.swift; sourceTree = "<group>"; };
 		468F9C0C23B8F20600102CD0 /* Pwnagotchi Sticker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pwnagotchi Sticker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +219,9 @@
 				46A02E7023B105D70029A011 /* SettingsView.swift */,
 				4678F65823B4114500EC3319 /* FaceFetcher.swift */,
 				4678F65623B40FF100EC3319 /* FaceModel.swift */,
+				463CDDD623BA1F3700773A3A /* MapView.swift */,
+				463CDDD823BA22B000773A3A /* MapModel.swift */,
+				463CDDDA23BA25C000773A3A /* MapFetcher.swift */,
 			);
 			path = "ios-pwnagotchi";
 			sourceTree = "<group>";
@@ -458,10 +467,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463CDDD923BA22B000773A3A /* MapModel.swift in Sources */,
+				463CDDD723BA1F3800773A3A /* MapView.swift in Sources */,
 				46FD8B4F23B0D37800C34BDF /* AppDelegate.swift in Sources */,
 				46A02E7123B105D70029A011 /* SettingsView.swift in Sources */,
 				4678F65923B4114500EC3319 /* FaceFetcher.swift in Sources */,
 				4678F65723B40FF100EC3319 /* FaceModel.swift in Sources */,
+				463CDDDB23BA25C000773A3A /* MapFetcher.swift in Sources */,
 				46FD8B5123B0D37800C34BDF /* SceneDelegate.swift in Sources */,
 				46FD8B5323B0D37800C34BDF /* ContentView.swift in Sources */,
 			);
@@ -498,6 +510,7 @@
 		};
 		468F9C1223B8F20A00102CD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 468F9C0B23B8F20600102CD0 /* Pwnagotchi Sticker */;
 			targetProxy = 468F9C1123B8F20A00102CD0 /* PBXContainerItemProxy */;
 		};
@@ -540,7 +553,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				INFOPLIST_FILE = "Pwnagotchi Sticker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -558,7 +571,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				INFOPLIST_FILE = "Pwnagotchi Sticker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -688,7 +701,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-pwnagotchi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				ENABLE_PREVIEWS = YES;
@@ -713,7 +726,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-pwnagotchi WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				ENABLE_PREVIEWS = YES;
@@ -739,7 +752,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				IBSC_MODULE = ios_pwnagotchi_WatchKit_Extension;
@@ -762,7 +775,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DEVELOPMENT_TEAM = 5TKBNNH75A;
 				IBSC_MODULE = ios_pwnagotchi_WatchKit_Extension;
@@ -787,7 +800,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-pwnagotchi/Preview Content\"";
 				DEVELOPMENT_TEAM = 5TKBNNH75A;
@@ -813,7 +826,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-pwnagotchi/Preview Content\"";
 				DEVELOPMENT_TEAM = 5TKBNNH75A;

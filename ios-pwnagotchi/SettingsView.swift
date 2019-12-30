@@ -37,20 +37,36 @@ struct SettingsView: View {
         })
         
         return NavigationView {
-            Form {
-                Section(header: Text("WebUI Credentials")){
-                    TextField("Hostname", text: hostnamebinding)
-                        .textContentType(.URL)
-                    TextField("Username", text: userbinding)
-                        .textContentType(.username)
-                        .autocapitalization(.none)
-                    SecureField("Password", text: passwordbinding)
-                        .textContentType(.password)
+            VStack {
+                Form {
+                    Section(header: Text("WebUI Credentials")){
+                        TextField("Hostname", text: hostnamebinding)
+                            .textContentType(.URL)
+                        TextField("Username", text: userbinding)
+                            .textContentType(.username)
+                            .autocapitalization(.none)
+                        SecureField("Password", text: passwordbinding)
+                            .textContentType(.password)
+                    }
                 }
-
             } .navigationBarTitle("Settings")
         }
         .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct SettingsRow : View {
+    var label: String
+    var value: String
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Text(label).font(.subheadline)
+                Spacer()
+                Text(value).font(.body)
+            }
+        }
     }
 }
 
