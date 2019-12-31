@@ -18,7 +18,7 @@ struct SettingsView: View {
         let hostnamebinding = Binding<String>(get: {
             (UserDefaults.standard.string(forKey: "hostname") ?? "172.20.10.6")
         }, set: {
-            self.hostname = $0
+            self.hostname = $0.trimmingCharacters(in: .whitespacesAndNewlines)
             UserDefaults.standard.set(self.hostname, forKey: "hostname")
         })
         

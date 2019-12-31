@@ -26,9 +26,10 @@ public class FaceFetcher: ObservableObject {
     
     func load() {
         let host = UserDefaults.standard.string(forKey: "hostname") ?? "172.20.10.6"
-        let username = UserDefaults.standard.string(forKey: "username") ?? ""
-        let password = UserDefaults.standard.string(forKey: "password") ?? ""
-        let url = URL(string: "http://" + username + ":" + password + "@" + host + ":8080/plugins/state-api/json")
+        let username = UserDefaults.standard.string(forKey: "username")?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
+        let password = UserDefaults.standard.string(forKey: "password")?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
+        let path = "http://" + username + ":" + password + "@" + host + ":8080/plugins/state-api/json"
+        let url = URL(string: path)
         
         URLSession.shared.dataTask(with: url!) {(data,response,error) in
             if ((error) != nil) {
@@ -68,6 +69,7 @@ public class FaceFetcher: ObservableObject {
                     self.facedata.face = "(☓‿‿☓)"
                     self.facedata.status = "Something went wrong."
                     self.button = "Connect"
+                    self.running = false
                 }
             }
         }.resume()

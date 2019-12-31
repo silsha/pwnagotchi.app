@@ -22,9 +22,10 @@ public class MapFetcher: ObservableObject {
     
     func load() {
         let host = UserDefaults.standard.string(forKey: "hostname") ?? "172.20.10.6"
-        let username = UserDefaults.standard.string(forKey: "username") ?? ""
-        let password = UserDefaults.standard.string(forKey: "password") ?? ""
-        let url = URL(string: "http://" + username + ":" + password + "@" + host + ":8080/plugins/webgpsmap/all")
+        let username = UserDefaults.standard.string(forKey: "username")!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)! ?? ""
+        let password = UserDefaults.standard.string(forKey: "password")!.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)! ?? ""
+        let path = "http://" + username + ":" + password + "@" + host + ":8080/plugins/webgpsmap/all"
+        let url = URL(string: path)
         DispatchQueue.main.async {
             self.showError = false
             self.connectBtn = "Reloading …"
